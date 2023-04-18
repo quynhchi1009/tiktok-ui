@@ -57,7 +57,7 @@ function Menu({ children, items = [], onChange = defaultFct }) {
                     </PopperWrapper>
                 </div>
             )}
-            onHide={() => setHistory((prev) => prev.sllide(0, 1))}
+            onHide={() => setHistory((prev) => prev.splice(0, 1))}
         >
             {children}
         </Tippy>
